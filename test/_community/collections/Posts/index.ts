@@ -19,5 +19,29 @@ export const PostsCollection: CollectionConfig = {
         update: () => false,
       },
     },
+    {
+      name: 'someFieldInSidebar',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'otherFieldInSidebar',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'publishedDate',
+      type: 'date',
+      admin: {
+        position: 'sidebar',
+        date: {
+          displayFormat: 'dd-MM-yyyy',
+        },
+      },
+    },
   ],
 };
